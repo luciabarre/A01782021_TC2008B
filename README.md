@@ -34,10 +34,10 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center">Construcción de Software y Toma de Decisiones</h3>
 
   <p align="center">
-    project_description
+    Documentación de la Materia
     <br />
     <a href="https://github.com/luciabarre/A01782021_TC2008B"><strong>Explore the docs »</strong></a>
     <br />
@@ -85,7 +85,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `luciabarre`, `A01782021_TC2008B`, `twitter_handle`, `linkedin_username`, `tec`, `email`, `project_title`, `project_description`
+Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `luciabarre`, `A01782021_TC2008B`, `twitter_handle`, `linkedin_username`, `tec`, `email`, `Construcción de Software y Toma de Decisiones`, `Documentación de la Materia`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
