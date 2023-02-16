@@ -85,7 +85,9 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `luciabarre`, `A01782021_TC2008B`, `twitter_handle`, `linkedin_username`, `tec`, `email`, `Construcción de Software y Toma de Decisiones`, `Documentación de la Materia`
+Este espacio servira como una forma de documentación de trabajos de la materia "Construcción de Software y Toma de Decisiones".
+
+ `luciabarre`, `A01782021_TC2008B`, `twitter_handle`, `linkedin_username`, `tec`, `email`, `Construcción de Software y Toma de Decisiones`, `Documentación de la Materia`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
