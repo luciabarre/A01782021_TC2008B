@@ -1,15 +1,58 @@
+#border{
+    border:solid;
+}
+
 #border-left{
-    border-left:solid
+    border-left:solid 1rem;
+    
 }
 
 #border-right{
-    border-right:solid
+    border-right:solid;
 }
 
 #border-bottom{
-    border-bottom:solid
+    border-bottom:solid;
+    width: 300px;
 }
 
 #border-top{
-    border-top:solid
+    border-top:solid;
+    width: 300px;  
+}
+
+#border-radius{
+    border: 2px solid ;
+    border-radius: 300px;
+    width: 300px;
+}
+
+#background-image{
+    background-image:url("https://cdn.snov.io/blog/wp-content/uploads/2019/04/pantone.png");
+    height: 200px;
+}
+
+.red{
+    color: red;
+}
+
+.cursive{
+    font-family: cursive;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.bold{
+    font-weight: bold;
+}
+.smallwidth{
+    width: 70px;
+}
+.mediumwidth{
+    width: 120px;
+}
+.largewidth{
+    width: 150px;
 }
