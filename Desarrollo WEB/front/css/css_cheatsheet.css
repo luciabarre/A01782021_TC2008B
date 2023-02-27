@@ -69,3 +69,11 @@
 .insidelist{
     list-style: inside;
 }
+
+.normalmargin{
+    margin: 3;
+}
+
+.normalpadding{
+    padding: 1em;
+}
