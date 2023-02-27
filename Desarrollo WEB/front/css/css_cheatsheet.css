@@ -56,3 +56,16 @@
 .largewidth{
     width: 150px;
 }
+.smallheight{
+    height: 70px;
+}
+.mediumheight{
+    height: 120px;
+}
+.largeheight{
+    height: 150px;
+}
+
+.insidelist{
+    list-style: inside;
+}
