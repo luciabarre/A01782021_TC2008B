@@ -13,7 +13,7 @@ body, html{
     background-color: #ffffff;
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 10px;
     grid-template-areas: 
         "header header header"
@@ -40,4 +40,8 @@ body, html{
     /*grid- row: 2 / span 4*/
     grid-column: 2;
     /*grid-area: content;*/
+}
+
+#grid-footer{
+    grid-column: 1 / span 3;
 }
