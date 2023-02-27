@@ -1,9 +1,22 @@
 body, html{
-    margin:0;
+    margin: 0;
     padding: 0;
 }
 
 .grid-container{
     padding: 10px;
-    background-color: #ddd;
+    background-color: #ffffff;
+    display:grid;
+    grid-template-columns: repeat(3,100px);
+    gap: 10px;
+}
+
+.grid-item{
+    background-color: rgb(187, 223, 255);
+    padding: 10px;
+    /* margin:10px; */
+}
+
+.grid-item:nth-child(even){
+    background-color:rgb(207, 255, 240)
 }
