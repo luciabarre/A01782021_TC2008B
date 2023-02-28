@@ -104,3 +104,26 @@
     padding:10px;
     background-color: rgba(250, 244, 232, 0.63);
 }
+
+.display{
+    display: inline-block;
+    /* width: 100px;
+    height: 100px; */
+    margin:10px;
+    padding:10px;
+    background-color: blanchedalmond;
+}
+
+.position-right{
+    position: relative;
+    bottom: 20px;
+    
+}
+.box {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 128, 0, 0.44);
+    color: white;
+  }
