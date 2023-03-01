@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class score : MonoBehaviour
 {
-    int score;
+    int Score;
     // Start is called before the first frame update
     void Start()
     {
-        score=0;
+        Score=0;
         
     }
 
     // Update is called once per frame
     public void AddPoints(int amount){
-        score+=amount;
-        Debug.Log("New score: "+ score);
+        Score+=amount;
+        Debug.Log("New score: "+ Score);
     }
 
 }
