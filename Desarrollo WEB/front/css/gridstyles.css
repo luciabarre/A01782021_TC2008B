@@ -56,8 +56,7 @@ body, html{
     gap: 10px;
 }
 
-.grid-container5{
-    padding: 10px;
+.grid-container5{ 
     height: 135px;
     display:grid;
     grid-template-columns: 1fr 1fr;
