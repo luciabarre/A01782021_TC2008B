@@ -21,7 +21,7 @@ public class CreateBalls : MonoBehaviour
 
     void DropBall(){
         //Generate a new random position
-        Vector3 pos = new Vector3(Random.Range(-10.0f, 10.0f)6,0)
+        Vector3 pos = new Vector3(Random.Range(-10.0f, 10.0f)6,0);
         //Create a copy of the prefab
         Instantiate(ball, pos, Quaternion.identity);
 
