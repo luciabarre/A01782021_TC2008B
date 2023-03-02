@@ -1,22 +1,25 @@
 *{
     box-sizing: border-box;
-}
+} 
 
 body, html{
-    margin: 10;
+    margin:0;
     padding: 0;
 }
 
 
 div {
-    border:1px solid black;
+    border:1px solid rgb(18, 18, 18);
 }
 
 .flex-container{
     display: flex;
-    flex-wrap:wrap;
+    /* flex-wrap:wrap; */
     justify-content: space-evenly;
     align-content: flex-start;
+    height:100%;
+    /* padding: 10px; */
+    /* margin:10px;  */
 
 }
 
@@ -24,20 +27,105 @@ div {
     margin:5%;
     flex-shrink: 1;
     flex-grow: 2;
+    justify-content: center;
+    text-align: left;
+    
 }
 
 .grid-container{
-    padding: 10px;
-    height: 100vh;
+    /* padding: 10px; */
+    height: 100%;
     background-color: #ffffff;
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 10px;
+    grid-template-rows: 10% 30% 10% 20% 10% 10%;
+    /* gap: 10px; */
 }
 
-.grid-item{
-    background-color: rgb(187, 223, 255);
-    padding: 10px;
-    /* margin:10px; */
+.header-grid{
+    background-color: rgb(26, 26, 62);
+    grid-column: 1/span 3;
+    grid-row: 1;
+}
+
+.footer-grid{
+    background-color: rgb(26, 26, 62);
+    grid-column: 1/span 3;
+    grid-row: 6;
+}
+
+.second-grid{
+    background-color: rgb(170, 87, 46);
+    grid-column: 1/span 3;
+    grid-row: 2;
+}
+
+.third-grid{
+    background-color: rgb(26, 26, 62);
+    grid-column: 1/span 3;
+    grid-row: 3;
+}
+.fifth-grid{
+    background-color: rgb(255, 255, 255);
+    grid-column: 1/span 3;
+    grid-row: 5;
+}
+
+.fourth-grid{
+    background-color: rgb(255, 255, 255);
+    grid-column: 1/span 3;
+    grid-row: 4;
+}
+
+.subtitles{
+    color: white;
+    font-weight: bold;
+    justify-content: right;
+    text-align: center;
+}
+.right{
+    justify-content: right;
+}
+
+.left{
+    justify-content: left;
+
+}
+.title{
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+    justify-content:center;
+    text-align: center;
+}
+
+.email{
+    background-color: white;
+    color: black;
+}
+
+/* .imagesize{
+    height: 250px;
+    width:250px;
+} */
+
+.id1{
+    grid-column: 1;
+    grid-row: 5;
+    height: 250px;
+    width:250px;
+
+}
+.id2{
+    grid-column: 2;
+    grid-row: 5;
+    height: 250px;
+    width:250px;
+}
+.id3{
+    grid-column: 3;
+    grid-row: 5;
+    height: 250px;
+    width:250px;
+    
 }
