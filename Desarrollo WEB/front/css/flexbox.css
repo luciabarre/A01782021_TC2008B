@@ -8,15 +8,15 @@ body, html{
 }
 
 
-div {
+/* div {
     border:1px solid rgb(18, 18, 18);
-}
+} */
 
 .flex-container{
     display: flex;
-    /* flex-wrap:wrap; */
+    /* flex-wrap:wrap;  */
     justify-content: space-evenly;
-    align-content: flex-start;
+    align-content:flex-start;
     height:100%;
     /* padding: 10px; */
     /* margin:10px;  */
@@ -26,30 +26,28 @@ div {
 .flex-item{
     margin:5%;
     flex-shrink: 1;
-    flex-grow: 2;
+    flex-grow: 1;
     justify-content: center;
-    text-align: left;
+    text-align: center;
     
 }
 
 .grid-container{
-    /* padding: 10px; */
     height: 100%;
     background-color: #ffffff;
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 10% 30% 10% 20% 10% 10%;
-    /* gap: 10px; */
+    grid-template-rows: 7% 30% 20% 25% 7%;
 }
 
 .header-grid{
-    background-color: rgb(26, 26, 62);
+    background-color: rgb(121, 121, 236);
     grid-column: 1/span 3;
     grid-row: 1;
 }
 
 .footer-grid{
-    background-color: rgb(26, 26, 62);
+    background-color: rgb(90, 90, 110);
     grid-column: 1/span 3;
     grid-row: 6;
 }
@@ -66,7 +64,7 @@ div {
     grid-row: 3;
 }
 .fifth-grid{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(43, 14, 14);
     grid-column: 1/span 3;
     grid-row: 5;
 }
@@ -77,11 +75,13 @@ div {
     grid-row: 4;
 }
 
-.subtitles{
-    color: white;
-    font-weight: bold;
+.text{
+    color: rgb(0, 0, 0);
     justify-content: right;
+    font-size: 15px;
     text-align: center;
+    box-sizing: content-box;
+    margin: 10px;
 }
 .right{
     justify-content: right;
@@ -94,38 +94,32 @@ div {
 .title{
     color: white;
     font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: larger;
     justify-content:center;
     text-align: center;
 }
+.button{
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
 
-.email{
+#email{
     background-color: white;
+    color: rgb(80, 78, 78);
+}
+#subscribe{
+    background-color: rgb(185, 94, 94);
     color: black;
 }
-
-/* .imagesize{
-    height: 250px;
-    width:250px;
-} */
-
-.id1{
-    grid-column: 1;
-    grid-row: 5;
-    height: 250px;
-    width:250px;
-
+#simple{
+    font-weight: bold;
+    color:white;
 }
-.id2{
-    grid-column: 2;
-    grid-row: 5;
-    height: 250px;
-    width:250px;
-}
-.id3{
-    grid-column: 3;
-    grid-row: 5;
-    height: 250px;
-    width:250px;
-    
-}
+
+ .imagesize{
+    height: 100px;
+    width:100px;
+} 
+
