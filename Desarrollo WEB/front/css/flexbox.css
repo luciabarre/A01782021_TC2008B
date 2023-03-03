@@ -15,9 +15,10 @@ body, html{
 .flex-container{
     display: flex;
     /* flex-wrap:wrap;  */
-    justify-content: space-evenly;
     align-content:flex-start;
     height:100%;
+    flex-direction: row;
+    
     /* padding: 10px; */
     /* margin:10px;  */
 
@@ -27,8 +28,10 @@ body, html{
     margin:5%;
     flex-shrink: 1;
     flex-grow: 1;
-    justify-content: center;
-    text-align: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    
+    
     
 }
 
@@ -85,10 +88,12 @@ body, html{
 }
 .right{
     justify-content: right;
+    align-content: center;
 }
 
 .left{
     justify-content: left;
+    align-content: center;
 
 }
 .title{
