@@ -13,50 +13,49 @@ body, html{
     height:100%;
     flex-direction: row; 
     align-content:flex-start;
+    
 }
 
 .flex-item{
     margin:1%;
     flex-shrink: 1;
     flex-grow: 1;
-    border: 1px solid;
     justify-content: space-evenly;
-    flex-wrap: nowrap;
+    flex-wrap:wrap;
+    overflow:scroll;
 }
 
 .grid-container{
     height: 100%;
-    border: 3px solid red;
-    background-color: #8e4444;
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 10% 45% 10% 30% 5%;
+    grid-template-rows: 8% 49% 8% 30% 5%;
 }
 
 .header-grid{
-    background-color: rgb(198, 198, 255);
+    background-color: #2c3333;
     grid-column: 1/span 3;
     grid-row: 1;
 }
 
 .footer-grid{
-    background-color: rgb(198, 198, 225);
+    background-color:#2c3333;
     grid-column: 1/span 3;
     grid-row: 5;
     justify-content: center;
-    align-content: center;
 }
 
 .second-grid{
-    background-color: rgb(170, 87, 46);
+    background-color: #cbe4de;
     grid-column: 1/span 3;
     grid-row: 2;
 }
 
 .third-grid{
-    background-color: rgb(26, 26, 62);
+    background-color:#2e4f4f;
     grid-column: 1/span 3;
     grid-row: 3;
+    justify-content: center;
 }
 .fifth-grid{
     background-color: rgb(228, 224, 224);
@@ -68,6 +67,8 @@ body, html{
     background-color: rgb(255, 255, 255);
     grid-column: 1/span 3;
     grid-row: 4;
+    justify-content: center;
+    padding: 1%;
 }
 
 .text{
@@ -77,28 +78,26 @@ body, html{
     box-sizing: content-box;
     margin: 10px;
 }
-.right{
-    align-content: center;
-    float:right;
+.photodescription{
+    color: rgb(0, 0, 0);
+    font-size: 8px;
+    text-align: center;
+    box-sizing: content-box;
+    margin: 10px;
 }
 
-.left{
-    float: left;
-    align-content: center;
-
-}
 .title{
     color: white;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: larger;
+    font-size:40px;
+    text-shadow: 0 0 3px#2e4f4f;
     justify-content:center;
     text-align: center;
     padding-top: 10%;
 }
 .button{
     color:white;
-    background-color: rgb(43, 43, 60);
     padding:10px 0; 
     margin: 5px;
     width: 68px; 
@@ -109,30 +108,15 @@ body, html{
 
 .buttoncon{
     color:white;
-    background-color: rgb(36, 36, 61);
     padding:1%;
     width: 60%; 
     margin: 1px;
-    flex-direction: row;
-    position: relative;
-    height:100%;
-}
-#buttonsub{
-    color:white;
-    background-color: rgb(43, 43, 60);
-    padding:10px 0; 
-    margin: 5px;
-    width: 300px; 
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
-    text-align: center;
     flex-direction: row;
     position: relative;
 }
 
 .simple{
     color:white;
-    background-color: rgb(126, 126, 154);
     padding:1px;
     padding-left: 2%;
     margin: 1px;
@@ -142,15 +126,66 @@ body, html{
     text-align: center;
     line-height: 1;
 }
-
+#sub{
+    background-color: #cbe4de;
+    padding:10px; 
+    margin: 10px;
+    width: 90px; 
+    height:auto;
+    text-align: center;
+}
 #email{
     background-color: white;
     color: rgb(80, 78, 78);
-    width:60;
+    padding:10px; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 1px;
+    width: 180px; 
+    height:auto;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
- .imagesize{
+.buttonconemail{
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 60%; 
+    flex-direction: row;
+    position: relative;
+    justify-content: center;
+}
+
+#buttonnews{
+    color:white;
+    padding:10px; 
+    margin: 10px;
+    width: 180px; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    text-align: center;
+    height: auto;
+}
+
+ .image{
     height: 100px;
     width:100px;
+    justify-content: space-evenly;
 } 
+
+.buttonfoto{
+    color:white;
+    padding:3%; 
+    padding-bottom: 10%;
+    margin: 5px;
+    width: 68px; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    text-align: center;
+
+}
+#footer{
+    color: white;
+}
 
