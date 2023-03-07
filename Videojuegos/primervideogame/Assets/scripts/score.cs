@@ -5,7 +5,9 @@ using TMPro;
 
 public class score : MonoBehaviour
 {
-    [SerializeField] TMP_text tmpobj;
+    [SerializeField] TMP_Text tmpObj;
+    [SerializeField] int maxScore;
+    [SerializeField] CreateBalls creator;
     int Score;
     // Start is called before the first frame update
     void Start()
@@ -17,8 +19,18 @@ public class score : MonoBehaviour
     // Update is called once per frame
     public void AddPoints(int amount){
         Score+=amount;
-        tmpobj.text= "Score" + Score;
+        tmpObj.text= "Score" + Score;
         Debug.Log("New score: "+ Score);
+
+        if(Score==maxScore){
+            Finish();
+        }
+    }
+
+    void Finish()
+    {
+        creator.StopBalls();
+
     }
 
 }

@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 7fe4a73251fa944f199731a1e303d99f
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Amelinda
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 4558f3d3e216148b687057ed1f1e560c, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

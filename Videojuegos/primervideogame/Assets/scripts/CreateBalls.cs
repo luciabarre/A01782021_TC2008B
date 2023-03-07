@@ -29,4 +29,8 @@ public class CreateBalls : MonoBehaviour
         Destroy(obj,5);
 
     }    
+
+    public void StopBalls(){
+        CancelInvoke("DropBall");
+    }
 }
