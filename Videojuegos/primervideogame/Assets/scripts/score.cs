@@ -12,6 +12,7 @@ public class score : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        creator=GetComponent<CreateBalls>();
         Score=0;
         
     }
@@ -30,6 +31,7 @@ public class score : MonoBehaviour
     void Finish()
     {
         creator.StopBalls();
+        tmpObj.text+="\n\nYou Won! ";
 
     }
 
