@@ -23,7 +23,11 @@
             <li>¿Qué es el DOM?
                 <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. The DOM provides a way for web developers to access and manipulate HTML and XML documents dynamically, using a tree-like structure that represents the document's elements, attributes, and text.
 
-                    The DOM is language-independent and can be used with any programming language that supports the necessary APIs, such as JavaScript, Python, or Ruby. By using the DOM, developers can create dynamic web pages that respond to user input, modify their appearance and behavior, and interact with web servers and databases.</p>
+                    The DOM is language-independent and can be used with any programming language that supports the necessary APIs, such as JavaScript, Python, or Ruby. By using the DOM, developers can create dynamic web pages that respond to user input, modify their appearance and behavior, and interact with web servers and databases.
+                </p>
+                <p><u>Conclusion: Esta información esta correcta segun: Mozilla(s.F.). Introduction to the DOM. Recuperado de 
+                    <a>https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction</a> </u></p>
+                    <br>
             </li>
             <li>¿Qué es un nodo?
                 <p>En el contexto del Document Object Model (DOM), un nodo es un objeto que representa un elemento en una estructura jerárquica de árbol que representa un documento HTML o XML. Cada elemento, atributo y texto en un documento es representado por un nodo en el árbol DOM.
@@ -31,6 +35,8 @@
                     Cada nodo en el árbol tiene una posición relativa a otros nodos, con algunos nodos que tienen nodos secundarios (hijos) y algunos que no tienen nodos secundarios. Los nodos también pueden tener nodos padres y hermanos, y pueden tener propiedades y métodos que permiten a los desarrolladores acceder y manipular su contenido y estructura.
                     
                     Por ejemplo, un nodo puede ser un elemento HTML como un párrafo (<p>), un atributo como class="foo", o simplemente un nodo de texto que contiene contenido dentro de un elemento. Los nodos pueden ser seleccionados y manipulados usando JavaScript u otro lenguaje de programación compatible con el DOM.</p>
+                    <p><u>Conclusion: Esta información es correcta segun: Rouse,M.(2021). What does node mean? <a>https://www.techopedia.com/definition/5307/node</a></u></p>
+                    <br>
             </li>
             <li>¿Cómo se accede a un elemento del DOM?
                 <p>Para acceder a un elemento del DOM (Document Object Model) en una página web, se puede utilizar JavaScript para buscar y manipular los elementos HTML.
@@ -40,7 +46,6 @@
                     Por ID:
                     Puede acceder a un elemento del DOM utilizando su ID con el método getElementById(). Por ejemplo, si el elemento que desea acceder tiene el ID "mi-elemento", puede acceder a él de la siguiente manera:
                     javascript
-                    Copy code
                     var miElemento = document.getElementById("mi-elemento");
                     Por nombre de etiqueta:
                     Puede acceder a todos los elementos de una determinada etiqueta utilizando el método getElementsByTagName(). Por ejemplo, si desea acceder a todos los elementos <p> en una página, puede hacer lo siguiente:
@@ -58,13 +63,99 @@
                     Copy code
                     var miElemento = document.querySelector(".contenedor #mi-elemento");
                     Una vez que ha accedido a un elemento del DOM, puede manipular sus propiedades y atributos utilizando JavaScript.</p>
+                <p><u>Conclusión: Chat Gpt si da ideas validas de como acceder un nodo aunque tambien incluye codigo de javascript que no esta implemetnado correctamente. Por ejemplo, utiliza var para declarar variables. De acuerdo con w3 schools, si esta correcta la parte eorica de esta respuesta. W3schools.(s.F.). The DOM Programming Interface. <a>https://www.w3schools.com/js/js_htmldom_methods.asp#:~:text=The%20most%20common%20way%20to,demo%22%20to%20find%20the%20element.</a></u></p>
+                <br>
             </li>
-            <li>¿Cómo se modifica un elemento del DOM?</li>
-            <li>¿Cuál es la diferencia entre getElementby* y querySelector*?</li>
-            <li>¿Qué es un evento?</li>
-            <li>¿Qué es un listener?</li>
-            <li>¿Qué es un callback?</li>
-            <li>¿Qué es un objeto de evento?</li>
+            <li>¿Cómo se modifica un elemento del DOM?
+                <p>Para modificar un elemento del DOM (Document Object Model) en una página web, se puede utilizar JavaScript para cambiar el contenido, las propiedades o los atributos del elemento.
+
+                    Hay varias maneras de modificar un elemento del DOM en JavaScript, dependiendo de lo que se quiera hacer.
+                    
+                    Modificar el contenido:
+                    Para cambiar el contenido de un elemento, se puede acceder a su propiedad innerHTML y cambiar su valor. Por ejemplo, si desea cambiar el contenido de un elemento con el ID "mi-elemento", puede hacer lo siguiente:
+                    javascript
+                    Copy code
+                    var miElemento = document.getElementById("mi-elemento");
+                    miElemento.innerHTML = "Nuevo contenido";
+                    Modificar los atributos:
+                    Para cambiar los atributos de un elemento, se puede acceder a sus propiedades específicas (como src, href, class, style, etc.) y cambiar sus valores. Por ejemplo, si desea cambiar el atributo src de una imagen con el ID "mi-imagen", puede hacer lo siguiente:
+                    javascript
+                    Copy code
+                    var miImagen = document.getElementById("mi-imagen");
+                    miImagen.src = "nueva-imagen.jpg";
+                    Agregar o quitar clases:
+                    Para agregar o quitar clases a un elemento, se puede acceder a su propiedad classList y utilizar los métodos add() o remove(). Por ejemplo, si desea agregar la clase "mi-clase" a un elemento con el ID "mi-elemento", puede hacer lo siguiente:
+                    csharp
+                    Copy code
+                    var miElemento = document.getElementById("mi-elemento");
+                    miElemento.classList.add("mi-clase");
+                    Y si desea quitar la clase "mi-clase" del mismo elemento, puede hacer lo siguiente:
+                    
+                    csharp
+                    Copy code
+                    miElemento.classList.remove("mi-clase");
+                    Crear nuevos elementos:
+                    Para crear nuevos elementos en el DOM, se puede utilizar el método createElement() para crear un nuevo elemento y luego agregarlo al DOM utilizando métodos como appendChild() o insertBefore(). Por ejemplo, si desea crear un nuevo elemento div y agregarlo al final del cuerpo de la página, puede hacer lo siguiente:
+                    javascript
+                    Copy code
+                    var nuevoElemento = document.createElement("div");
+                    nuevoElemento.innerHTML = "Nuevo elemento agregado";
+                    document.body.appendChild(nuevoElemento);
+                    Una vez que se ha modificado un elemento del DOM, los cambios se reflejarán inmediatamente en la página web.</p>
+                    <p><u>Conclusión: Chat Gpt si da ideas validas de como acceder un nodo aunque tambien incluye codigo de javascript que no esta implemetnado correctamente. Por ejemplo, utiliza var para declarar variables. De acuerdo con w3 schools, si esta correcta la parte eorica de esta respuesta. W3schools.(s.F.). The DOM Programming Interface. <a>https://www.w3schools.com/js/js_htmldom_methods.asp#:~:text=The%20most%20common%20way%20to,demo%22%20to%20find%20the%20element.</a></u></p>
+                    <br>
+                </li>
+            <li>¿Cuál es la diferencia entre getElementby* y querySelector*?
+                <p>Tanto getElementby* como querySelector* son métodos que se utilizan en JavaScript para seleccionar elementos del DOM (Document Object Model).
+
+                    La principal diferencia entre ellos es que getElementby* solo puede seleccionar elementos por su etiqueta, nombre o clase, mientras que querySelector* puede seleccionar elementos usando cualquier selector CSS.
+                    
+                    Por ejemplo, getElementById selecciona un elemento por su ID, getElementsByClassName selecciona elementos por su clase, y getElementsByTagName selecciona elementos por su etiqueta. En contraste, querySelector puede seleccionar elementos por su ID (#myElement), clase (.myClass), etiqueta (div), atributos ([name='myName']), o cualquier combinación de estos.
+                    
+                    Otra diferencia importante es que querySelector* solo devuelve el primer elemento que coincida con el selector, mientras que getElementby* devuelve una lista de todos los elementos que coinciden con el selector.
+                    
+                    En resumen, la principal diferencia entre getElementby* y querySelector* es que querySelector* permite una selección más precisa de elementos del DOM usando cualquier selector CSS, mientras que getElementby* solo permite la selección por etiqueta, nombre o clase y devuelve una lista de elementos en lugar de solo el primer elemento coincidente.</p>
+                    <p><u>Conclusión: La información es correcta segun Codea.(s.F.). Diferencia entre queryselector y getElementById. Recuperado de <a> https://codea.app/blog/queryselector-vs-getelementbyId#:~:text=Con%20una%20instrucci%C3%B3n%20querySelector%2C%20puede,un%20elemento%20por%20su%20ID.</a></u></p>
+                    <br>
+                </li>
+            <li>¿Qué es un evento?
+                <p>En programación, un evento es cualquier acción que sucede en un sistema, como por ejemplo un clic del ratón, una tecla presionada, un cambio en el estado de un elemento o una carga completa de una página web.
+
+                    En el contexto de la programación web, los eventos son acciones que ocurren en el navegador del usuario, como clics de ratón, cambios de foco, pulsaciones de teclas, cambios en el tamaño de la ventana y la carga completa de la página web.
+                    
+                    Cuando ocurre un evento en el navegador, se activa una función en JavaScript que se encarga de manejar ese evento. Esta función se llama "manejador de eventos" o "event listener". Los event listeners son funciones que se ejecutan en respuesta a un evento específico y se vinculan a un elemento HTML utilizando el método addEventListener().
+                    
+                    Los eventos son una parte fundamental de la programación web, ya que permiten a los desarrolladores crear sitios web interactivos y dinámicos. Los eventos también permiten que el sitio web responda a las acciones del usuario de manera rápida y eficiente.</p>
+                    <p><u>Conclusión: La información dada por chat gpt si es correcta aunque me hubiera gustado que mencionara que en javascript se puede programar alrededor de un evento o de forma secuencial. Garro, A. (s.F.).Javascript. Recuperado de <a> https://www.arkaitzgarro.com/javascript/capitulo-15.html</a></u></p>
+                    <br>
+                </li>
+            <li>¿Qué es un listener?
+                <p>En programación, un listener es una función que se encarga de manejar un evento específico en un sistema. También se conoce como "event listener" o "manejador de eventos".
+
+                    En el contexto de la programación web, un listener se utiliza para escuchar y responder a eventos que ocurren en el navegador del usuario, como clics de ratón, pulsaciones de teclas, cambios en el tamaño de la ventana y la carga completa de la página web.
+                    
+                    Los listeners se vinculan a un elemento HTML utilizando el método addEventListener(). Cuando ocurre el evento especificado, el listener se activa y ejecuta la función de manejo de eventos correspondiente.
+                    
+                    Por ejemplo, si se quiere que una función se ejecute cada vez que se haga clic en un botón, se puede vincular un listener de clic al botón mediante el método addEventListener(). Cuando el usuario haga clic en el botón, el listener se activará y ejecutará la función de manejo de eventos correspondiente.
+                    
+                    Los listeners son una parte importante de la programación web, ya que permiten a los desarrolladores crear sitios web interactivos y dinámicos que respondan a las acciones del usuario de manera rápida y eficiente.</p>
+            <p><u>Conclusión: La información es correcta aunque igual debería de incluir que esta función se puede utilizar en elementos, hijos de elementos, web o documentos. Mozilla. (s.F.). EvetTarget.addEventListener(). <a>https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener</a></u></p>
+            <br>
+            </li>
+            <li>¿Qué es un callback?
+                <p>Un callback es una función que se pasa como argumento a otra función y que se ejecuta después de que la función original haya terminado de ejecutarse. Los callbacks son útiles para manejar la finalización de tareas asincrónicas y para implementar patrones de diseño comunes en la programación.</p>
+            <p><u>Conclusion: La definición de chatGPT esta correcta aunque me proporciono mucha información que no fue requerida. Mozilla. (s.F.). Callback Function. <a>https://developer.mozilla.org/en-US/docs/Glossary/Callback_function</a></u></p>
+            <br>
+            </li>
+            <li>¿Qué es un objeto de evento?
+                <p>Un objeto de evento es un objeto que contiene información sobre un evento específico que ocurre en el navegador del usuario. Por ejemplo, cuando el usuario hace clic en un botón, el navegador crea un objeto de evento que contiene información sobre el evento, como el tipo de evento, el elemento que desencadenó el evento y la posición del mouse cuando se produjo el evento.
+                    
+                    Los objetos de eventos se utilizan para manejar eventos en JavaScript. Por ejemplo, cuando se crea un objeto de evento, se puede utilizar para ejecutar una función de manejo de eventos que se encarga de manejar el evento.
+                    
+                    Los objetos de eventos son una parte importante de la programación web, ya que permiten a los desarrolladores crear sitios web interactivos y dinámicos que respondan a las acciones del usuario de manera rápida y eficiente.</p>
+                    <p><u>Conclusión: L ainformación proporcionada es correcta ya que coincide con la descripción de W3schools en <a>https://www.w3schools.com/jsref/obj_event.asp</a></u></p>
+                    <br>
+                </li>
         </ol>        
     </div>
 
