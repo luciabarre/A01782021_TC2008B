@@ -2,25 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css">
     <link type="text/css" rel="stylesheet" href="../css/eventos_dom.css">
     <script type="module" src="../js/eventos_dom.js"></script>
     <title>Eventos y Dom</title>
 </head>
 
-<body>
-    <h1>Eventos y DOM y ChatGPT</h1>
+<body >
+    <header class="container"> <h1 class="text-center letrabold">Eventos y DOM y ChatGPT</h1></header>
+   
 
     <div class="container">
-        <h2>Instrucciones</h2>
+        <h2 class="letrabold">Instrucciones</h2>
         <p>Utiliza ChatGPT y github Copilot para resolver la siguiente actividad. Antes de hacer los ejercicios, contesta las siguientes preguntas. Pregúntale a ChatGPT las preguntas, y verifica que lo que haya generado es correcto. Cuando sea necesario, agrega un ejemplo de código. Incluye una fuente que valide o invalide lo que generó. Agrega elementos de HTML con tus respuestas. (<b>Protip</b>: usa ChatGPT para que las respuestas las ponga directamente en elementos de html.)</p>
 
         <p>Terminando las preguntas y los ejercicios, documenta tu experiencia con las herramientas en la sección de conclusiones. </p>
     </div>
 
     <div class="container">
-        <h3>Preguntas</h3>
+        <h3 class="letrabold">Preguntas</h3>
         <ol>
-            <li>¿Qué es el DOM?
+            <li >
+                <p class="pregunta">¿Qué es el DOM?</p>
                 <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. The DOM provides a way for web developers to access and manipulate HTML and XML documents dynamically, using a tree-like structure that represents the document's elements, attributes, and text.
 
                     The DOM is language-independent and can be used with any programming language that supports the necessary APIs, such as JavaScript, Python, or Ruby. By using the DOM, developers can create dynamic web pages that respond to user input, modify their appearance and behavior, and interact with web servers and databases.
@@ -29,7 +32,8 @@
                     <a>https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction</a> </u></p>
                     <br>
             </li>
-            <li>¿Qué es un nodo?
+            <li>
+                <p class="pregunta">¿Qué es un nodo?</p>
                 <p>En el contexto del Document Object Model (DOM), un nodo es un objeto que representa un elemento en una estructura jerárquica de árbol que representa un documento HTML o XML. Cada elemento, atributo y texto en un documento es representado por un nodo en el árbol DOM.
 
                     Cada nodo en el árbol tiene una posición relativa a otros nodos, con algunos nodos que tienen nodos secundarios (hijos) y algunos que no tienen nodos secundarios. Los nodos también pueden tener nodos padres y hermanos, y pueden tener propiedades y métodos que permiten a los desarrolladores acceder y manipular su contenido y estructura.
@@ -38,7 +42,8 @@
                     <p><u>Conclusion: Esta información es correcta segun: Rouse,M.(2021). What does node mean? <a>https://www.techopedia.com/definition/5307/node</a></u></p>
                     <br>
             </li>
-            <li>¿Cómo se accede a un elemento del DOM?
+            <li>
+                <p class="pregunta">¿Cómo se accede a un elemento del DOM?</p>
                 <p>Para acceder a un elemento del DOM (Document Object Model) en una página web, se puede utilizar JavaScript para buscar y manipular los elementos HTML.
 
                     Hay varias maneras de acceder a un elemento del DOM en JavaScript, dependiendo de cómo se identifique el elemento.
@@ -66,7 +71,8 @@
                 <p><u>Conclusión: Chat Gpt si da ideas validas de como acceder un nodo aunque tambien incluye codigo de javascript que no esta implemetnado correctamente. Por ejemplo, utiliza var para declarar variables. De acuerdo con w3 schools, si esta correcta la parte eorica de esta respuesta. W3schools.(s.F.). The DOM Programming Interface. <a>https://www.w3schools.com/js/js_htmldom_methods.asp#:~:text=The%20most%20common%20way%20to,demo%22%20to%20find%20the%20element.</a></u></p>
                 <br>
             </li>
-            <li>¿Cómo se modifica un elemento del DOM?
+            <li>
+                <p class="pregunta">¿Cómo se modifica un elemento del DOM?</p>
                 <p>Para modificar un elemento del DOM (Document Object Model) en una página web, se puede utilizar JavaScript para cambiar el contenido, las propiedades o los atributos del elemento.
 
                     Hay varias maneras de modificar un elemento del DOM en JavaScript, dependiendo de lo que se quiera hacer.
@@ -105,7 +111,8 @@
                     <p><u>Conclusión: Chat Gpt si da ideas validas de como acceder un nodo aunque tambien incluye codigo de javascript que no esta implemetnado correctamente. Por ejemplo, utiliza var para declarar variables. De acuerdo con w3 schools, si esta correcta la parte eorica de esta respuesta. W3schools.(s.F.). The DOM Programming Interface. <a>https://www.w3schools.com/js/js_htmldom_methods.asp#:~:text=The%20most%20common%20way%20to,demo%22%20to%20find%20the%20element.</a></u></p>
                     <br>
                 </li>
-            <li>¿Cuál es la diferencia entre getElementby* y querySelector*?
+            <li>
+                <p class="pregunta">¿Cuál es la diferencia entre getElementby* y querySelector*?</p>
                 <p>Tanto getElementby* como querySelector* son métodos que se utilizan en JavaScript para seleccionar elementos del DOM (Document Object Model).
 
                     La principal diferencia entre ellos es que getElementby* solo puede seleccionar elementos por su etiqueta, nombre o clase, mientras que querySelector* puede seleccionar elementos usando cualquier selector CSS.
@@ -118,7 +125,8 @@
                     <p><u>Conclusión: La información es correcta segun Codea.(s.F.). Diferencia entre queryselector y getElementById. Recuperado de <a> https://codea.app/blog/queryselector-vs-getelementbyId#:~:text=Con%20una%20instrucci%C3%B3n%20querySelector%2C%20puede,un%20elemento%20por%20su%20ID.</a></u></p>
                     <br>
                 </li>
-            <li>¿Qué es un evento?
+            <li>
+                <p class="pregunta">¿Qué es un evento?</p>
                 <p>En programación, un evento es cualquier acción que sucede en un sistema, como por ejemplo un clic del ratón, una tecla presionada, un cambio en el estado de un elemento o una carga completa de una página web.
 
                     En el contexto de la programación web, los eventos son acciones que ocurren en el navegador del usuario, como clics de ratón, cambios de foco, pulsaciones de teclas, cambios en el tamaño de la ventana y la carga completa de la página web.
@@ -129,7 +137,8 @@
                     <p><u>Conclusión: La información dada por chat gpt si es correcta aunque me hubiera gustado que mencionara que en javascript se puede programar alrededor de un evento o de forma secuencial. Garro, A. (s.F.).Javascript. Recuperado de <a> https://www.arkaitzgarro.com/javascript/capitulo-15.html</a></u></p>
                     <br>
                 </li>
-            <li>¿Qué es un listener?
+            <li>
+                <p class="pregunta">¿Qué es un listener?</p>
                 <p>En programación, un listener es una función que se encarga de manejar un evento específico en un sistema. También se conoce como "event listener" o "manejador de eventos".
 
                     En el contexto de la programación web, un listener se utiliza para escuchar y responder a eventos que ocurren en el navegador del usuario, como clics de ratón, pulsaciones de teclas, cambios en el tamaño de la ventana y la carga completa de la página web.
@@ -142,12 +151,14 @@
             <p><u>Conclusión: La información es correcta aunque igual debería de incluir que esta función se puede utilizar en elementos, hijos de elementos, web o documentos. Mozilla. (s.F.). EvetTarget.addEventListener(). <a>https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener</a></u></p>
             <br>
             </li>
-            <li>¿Qué es un callback?
+            <li>
+                <p class="pregunta">¿Qué es un callback?</p>
                 <p>Un callback es una función que se pasa como argumento a otra función y que se ejecuta después de que la función original haya terminado de ejecutarse. Los callbacks son útiles para manejar la finalización de tareas asincrónicas y para implementar patrones de diseño comunes en la programación.</p>
             <p><u>Conclusion: La definición de chatGPT esta correcta aunque me proporciono mucha información que no fue requerida. Mozilla. (s.F.). Callback Function. <a>https://developer.mozilla.org/en-US/docs/Glossary/Callback_function</a></u></p>
             <br>
             </li>
-            <li>¿Qué es un objeto de evento?
+            <li>
+                <p class="pregunta">¿Qué es un objeto de evento?</p>
                 <p>Un objeto de evento es un objeto que contiene información sobre un evento específico que ocurre en el navegador del usuario. Por ejemplo, cuando el usuario hace clic en un botón, el navegador crea un objeto de evento que contiene información sobre el evento, como el tipo de evento, el elemento que desencadenó el evento y la posición del mouse cuando se produjo el evento.
                     
                     Los objetos de eventos se utilizan para manejar eventos en JavaScript. Por ejemplo, cuando se crea un objeto de evento, se puede utilizar para ejecutar una función de manejo de eventos que se encarga de manejar el evento.
@@ -159,8 +170,8 @@
         </ol>        
     </div>
 
-    <h3>Ejercicios de código</h3>
-    <p>Usa ChatGPT y copilot para resolver los ejercicios. Por cada ejercicio, pídele a ChatGPT o a copilot que te genere los comentarios. Verifica los resultados antes de subirlos a tu repo.</p>
+    <h3 class="text-center letrabold">Ejercicios de código</h3>
+    <p class="container">Usa ChatGPT y copilot para resolver los ejercicios. Por cada ejercicio, pídele a ChatGPT o a copilot que te genere los comentarios. Verifica los resultados antes de subirlos a tu repo.</p>
 
     <div class="container">
         <p>1. Modifica el siguiente elemento para mostrar la posición del mouse en el documento:</p>
@@ -239,7 +250,7 @@
     </div>
 
     <div class="container">
-        <h2>Conclusiones</h2>
+        <h2 class="letrabold">Conclusiones</h2>
         <p>Me parece que los AI son una excelente herramienta de ayuda. No se deberían de tomar como referencias finales ya que no siempre tienen razon. Sin embargo, es impresionante la cantidad de información y de respuestas que tienen. </p>
         <h4>Experiencia general</h4>
         <p>La experiencia general fue muy buena con chat Gpt aunque fue repetitivo. Con copilot la experiencia fue peor. No siempre daba la información pedida de manera correcta. </p>
